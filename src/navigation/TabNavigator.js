@@ -17,12 +17,12 @@ const getTabBarIcon = icon => ({tintColor}) => (
 const Stack = createNativeStackNavigator();
 const ContactsScreens = () =>{
     return (
-        <Stack.Navigator 
+        <Stack.Navigator className="bg-blue-500 "
             initialRouteName='Contacts'
             screenOptions={{
-                headerTintColor:'white',
-                headerStyle:{backgroundColor:'tomato'},
-                headerTitleAlign:'center'
+                headerTintColor:'blue',
+                headerTitleAlign:'center',
+                headerStyle:{backgroundColor:colors.black.blue}
             }}
             >
             <Stack.Screen name='Contacts' component={Contacts} options={{title:'Contacts'}}></Stack.Screen>
